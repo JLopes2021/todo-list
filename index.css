@@ -72,3 +72,10 @@ button {
 .complete {
     text-decoration: line-through;
 }
+
+.timestamp{
+    font-size: 2vh;
+    color: #ff3333;
+    font-weight: 300;
+    font-style: italic;
+}

@@ -9,17 +9,30 @@ document.addEventListener('DOMContentLoaded', function() {
     clearButton.addEventListener('click', clearAllTasks);
     document.body.appendChild(clearButton);
 
-    function addTask() {
+     function addTask() {
         const taskText = newTaskInput.value.trim();
 
         if (taskText !== '') {
             const tasks = taskText.split(';');
 
             tasks.forEach(task => {
-                if (task.trim() !== '') { // Verifica se a tarefa não está vazia
+                if (task.trim() !== '') {
                     const li = document.createElement('li');
-                    li.innerHTML = `
-                        <span>${task}</span>
+                    const now = new Date(); // Obtém a data e hora atual
+                    const timestamp = now.toLocaleString(); // Formata a data e hora
+
+                    const taskElement = document.createElement('span');
+                    taskElement.classList.add('task');
+                    taskElement.textContent = task;
+
+                    const timestampElement = document.createElement('span');
+                    timestampElement.classList.add('timestamp');
+                    timestampElement.textContent = ` - ${timestamp}`;
+
+                    li.appendChild(taskElement);
+                    li.appendChild(timestampElement);
+
+                    li.innerHTML += `
                         <button class="remove">Remover</button>
                         <button class="completeButton">Concluído</button>
                     `;
