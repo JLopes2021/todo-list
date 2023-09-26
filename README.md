@@ -8,8 +8,11 @@ Este é um simples aplicativo de lista de tarefas que permite aos usuários adic
 - Remover tarefas.
 - Marcar tarefas como concluídas.
 
+## Funcionalidades Extras
+
+- Inclusão da hora no sistema ao adicionar uma tarefa
+
 ## Demonstração
-![Tela Inicial](image.png)
 ![Tela Inicial 2](image-1.png)
 
 ## Como Usar
