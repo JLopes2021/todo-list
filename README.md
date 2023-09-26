@@ -9,8 +9,7 @@ Este é um simples aplicativo de lista de tarefas que permite aos usuários adic
 - Marcar tarefas como concluídas.
 
 ## Demonstração
-
-Em breve haverá um print do projeto aqui.
+![Tela Inicial](image.png)
 
 ## Como Usar
 
